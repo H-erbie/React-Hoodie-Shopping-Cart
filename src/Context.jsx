@@ -63,7 +63,7 @@ const AppProvider = ({ children }) => {
       ItemAmount = item.price * item.amount;
       tots += ItemAmount;
     });
-    return tots;
+    return parseFloat(tots.toFixed(2));
   };
 
   return (

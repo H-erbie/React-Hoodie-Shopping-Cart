@@ -25,6 +25,7 @@ body{
   margin: 3rem 0;
   position: absolute;
   top: 3rem;
+  flex-direction: column;
 }
 .app-name{
   color: lightgray;
@@ -40,6 +41,7 @@ body{
   justify-content: space-between;
   background-color: rgb(28, 65, 133);
   z-index: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 .cart-items-num{
   position: absolute;
@@ -77,6 +79,7 @@ body{
   background-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  outline: none;
 }
 .products-container{
   display: grid;
@@ -94,6 +97,7 @@ body{
   background-color: white;
   border-radius: 1rem 1rem 0 0rem;
   height: max-content;
+  align-items: center;
 }
 .add{
   width: 100%;
@@ -126,6 +130,8 @@ body{
   display: flex;
   padding: 0 0.5rem;
   justify-content: space-around;
+  gap: 0.5rem;
+  align-items: center;
 }
 .product-name{
   color: dimgray;
@@ -320,6 +326,29 @@ main{
   align-items: center;
   width: 100%;
 }
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  gap: 1rem;
+  padding: 2rem;
+}
+.socials-con{
+  font-size: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+.social-icon{
+  transition: var(--transition);
+  cursor: pointer;
+}
+.social-icon:hover{
+  color: #111;
+}
 @media screen and (max-width: 950px) {
   .product-card{
     gap: 0.5rem;
@@ -328,7 +357,7 @@ main{
     width: 200px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .product-card{
     gap: 0rem;
     height: 250px;
@@ -373,5 +402,11 @@ main{
   .nav-container h1{
     font-size: 1.5rem;
   }
-  
+  .footer-container{
+    font-size: 1.1rem;
+  }
+  .product-info{
+    flex-direction: column;
+    gap: 0
+  }
 }
