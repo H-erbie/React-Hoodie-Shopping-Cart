@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { products } from "./data";
+import { products } from "./Data";
 
 const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
